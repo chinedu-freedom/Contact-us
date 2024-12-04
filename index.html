@@ -7,8 +7,9 @@
     <title>Contact Form</title>
     <link rel="stylesheet" href="./Css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -18,7 +19,8 @@
             <div class="name-input">
                 <div class="">
                     <label for="first-name">First Name *</label> <br>
-                    <input class="input-field" type="text" id="first-name" required> <br>
+                    <input class="input-field" type="text" id="first-name" required autocomplete="on"> <br>
+                    <span class="first-name-error-message" id="first-name-error-message"></span>
                 </div>
                 <div class="">
                     <label for="last-name">Last Name *</label> <br>
@@ -26,12 +28,13 @@
                 </div>
             </div>
             <label for="email">Email Address *</label> <br>
-            <input class="email-input-field" type="email" id="email" required><br>
-            <label for="query-type" id="query-type">Query Type *</label>
+            <input class="email-input-field" type="email" id="email" required autocomplete="on"><br>
+            <span class="first-name-error-message" id="first-name-error-message"></span>
+            <label for="general-inquiry" id="query-type">Query Type *</label>
             <div class="query-type-selector">
                 <div class="query-type-option">
                     <input type="radio" id="general-inquiry" name="query-type-option">
-                <label for="general-inquiry">General Inquiry</label>
+                    <label for="general-inquiry">General Inquiry</label>
                 </div>
                 <div class="query-type-option">
                     <input type="radio" id="support-request" name="query-type-option">
@@ -39,11 +42,11 @@
                 </div>
             </div>
             <label for="message">Message *</label> <br>
-             <textarea id="message" rows="4" cols="50" required></textarea> <br>
+            <textarea id="message" rows="4" cols="50" required></textarea> <br>
             <span id="consent-span">
                 <input type="checkbox" name="check" id="check">
-            <p>i consent to being contacted by the team</p>
-        </span> <br>
+                <p>i consent to being contacted by the team</p>
+            </span> <br>
             <button id="submit-button">Submit</button>
 
         </div>
@@ -53,8 +56,7 @@
 
 
 
-    <script src="./contact.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
-

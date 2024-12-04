@@ -18,6 +18,15 @@ label{
     margin-top: 4px;
     text-indent: 14px;
 }
+.first-name-error-message{
+    color: red;
+    margin-left: 25px;
+    display: none;
+    font-size: 16px;
+    position: absolute;
+    padding-bottom: 40%;
+    
+}
 .contact-container h2{
     margin-bottom: 15px;
     font-size: 28px;
@@ -98,7 +107,7 @@ textarea{
     .name-input{
         flex-direction: column;
         gap: 15px;
-        width: 65%;
+        width: 69%;
     }
     .query-type-selector{
         flex-direction: column;
