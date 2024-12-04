@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "karla";
+}
+body{
+    background-color: hsl(186, 15%, 59%);
+}
+label{
+    font-weight: 900%;
+    font-size: 18px;
+}
+.input-field{
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 150%;
+    margin-top: 4px;
+    text-indent: 14px;
+}
+.contact-container h2{
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+.contact-container{
+    background-color: hsl(0, 0%, 100%);
+    width: 37%;
+    height: 88vh;
+    margin: 3% 0 2% 32%;
+    padding: 20px;
+    border-radius: 6px;
+}
+.name-input{
+    display:flex;
+    gap: 20%;  
+    margin-bottom: 18px;
+}
+.email-input-field{
+    margin: 5px 0 17px 0;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 99%;
+    text-indent: 14px;
+}
+.query-type-selector{
+    display:flex;
+    gap: 10px;
+}
+.query-type-option{
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 105%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0 18px 0;
+}
+#general-inquiry, #support-request{
+    cursor: pointer;
+}
+#message{
+    resize: none;
+    width: 95%;
+    margin-top: 6px;
+    border-radius: 5px;
+}
+textarea{
+        padding: 12px;
+}
+#consent-span{
+    margin-top: 20px;
+    display: inline-flex;
+    gap: 5px;
+}
+#submit-button{
+    background-color: hsl(169, 82%, 27%);
+    border: none;
+    width: 100%;
+    margin-top: 20px;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    height: 40px;
+}
+
+@media (max-width: 600px) {
+    .contact-container{
+        width: 80%;
+        margin: 30px 0 0 20px;
+        height: 117vh;
+    }
+    .name-input{
+        flex-direction: column;
+        gap: 15px;
+        width: 65%;
+    }
+    .query-type-selector{
+        flex-direction: column;
+        gap: 5px;
+        width: 95%;
+        margin-top: 8px;
+    }
+    .query-type-selector .query-type-option:nth-child(1){
+        margin-bottom: 5px;
+    }
+    #general-inquiry{
+        margin-left: -11px;
+    }
+    #message{
+        width: 92%;
+        margin-top: 20px;
+    }
+    textarea{
+        width: -10px;
+        height: 25vh;
+      }
+    #consent-span{
+        width:max-content;
+        font-size: 14.5px;
+        font-weight: 500px;
+    }
+    #submit-button{
+        height: 6%;
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .contact-container{
+        width: 70%;
+        margin: 8% 0 0 13%;
+    }
+    .name-input{
+        flex-direction: column;
+        gap: 15px;
+        width: 65%;
+    }
+    .query-type-selector{
+        flex-direction: column;
+        gap: 5px;
+        width: 95%;
+        margin-top: 8px;
+    }
+    .query-type-selector .query-type-option:nth-child(1){
+        margin-bottom: 5px;
+    }
+    #general-inquiry{
+        margin-left: -11px;
+    }
+    #message{
+        width: 95.5%;
+        margin-top: 20px;
+    }
+
+}
+
