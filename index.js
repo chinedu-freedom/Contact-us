@@ -34,8 +34,12 @@ button.addEventListener("click",() => {
         emailErrorMesssge.style.display = "block"
         emailErrorMesssge.textContent = "Please enter a valid email address"
     }
-    else{
+    else if(emailInput.value.includes('@') && (emailInput.value.includes('.com'))){
         emailErrorMesssge.style.display = "none"
+    }
+    else{
+        emailErrorMesssge.style.display = "block"
+        emailErrorMesssge.textContent = "Please enter a valid email address"
     }
     if(!consentCheckbox || !secondConsentCheckbox.checked){
         queryErrorMesssge.style.display = "block"
