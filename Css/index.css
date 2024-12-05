@@ -6,27 +6,64 @@
 body{
     background-color: hsl(186, 15%, 59%);
 }
+label::after{
+    color: hsl(186, 15%, 59%);
+    content: '*';
+}
+label.query-type-option::after{
+    content: '';
+}
 label{
     font-weight: 900%;
     font-size: 18px;
 }
-.input-field{
-    height: 35px;
-    border-radius: 5px;
-    border: 1px solid gray;
-    width: 144%;
-    margin-top: 4px;
-    text-indent: 14px;
-}
 .first-name-error-message{
     color: red;
-    margin-left: 25px;
     display: none;
-    font-size: 16px;
+    font-size: 12px;
     position: absolute;
-    padding-bottom: 40%;
-    
+    margin-left: 4px;
+    margin-top: 4px;
 }
+.last-name-error-message{
+    color: red;
+    margin-top: 4px;
+    display: none;
+    font-size: 12px;
+    position: absolute; 
+    margin-left: 4px;
+}
+.email-error-message{
+    color: red;
+    top: 40%;
+    margin-left: 4px;
+    display: none;
+    font-size: 12px;
+    position: absolute;
+}
+.query-error-message{
+    color: red;
+    display: none;
+    font-size: 12px;
+    position: absolute;    
+    margin-left: 4px;
+    top: 53%;
+}
+.textarea-error-message{
+    color: red;
+    display: none;
+    font-size: 12px;
+    margin-left: 4px;
+    position: absolute;    
+}
+.consent-error-message{
+    color: red;
+    display: none;
+    font-size: 12px;
+    position: absolute;   
+    margin-left: 4px; 
+}
+
 .contact-container h2{
     margin-bottom: 15px;
     font-size: 28px;
@@ -39,9 +76,17 @@ label{
     padding: 20px;
     border-radius: 6px;
 }
+.input-field{
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 155%;
+    margin-top: 4px;
+    text-indent: 14px;
+}
 .name-input{
     display:flex;
-    gap: 20%;  
+    gap: 22%;  
     margin-bottom: 18px;
 }
 .email-input-field{
@@ -66,7 +111,8 @@ label{
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin: 10px 0 18px 0;
+    margin: 6px 0 18px 0;
+    cursor: pointer;
 }
 #general-inquiry, #support-request{
     cursor: pointer;
@@ -99,15 +145,18 @@ textarea{
 }
 
 @media (max-width: 600px) {
+    body{
+        height: 124vh;
+    }
     .contact-container{
         width: 80%;
-        margin: 30px 0 0 20px;
-        height: 116vh;
+        margin: 30px 0 0 18.5px;
+        height: 115vh;
     }
     .name-input{
         flex-direction: column;
         gap: 15px;
-        width: 69%;
+        width: 64%;
     }
     .query-type-selector{
         flex-direction: column;
@@ -148,13 +197,17 @@ textarea{
     .name-input{
         flex-direction: column;
         gap: 15px;
-        width: 65%;
+        width: 64.3%;
     }
     .query-type-selector{
         flex-direction: column;
         gap: 5px;
-        width: 95%;
+        width: 94.7%;
         margin-top: 8px;
+    }
+    .email-input-field{
+        width: 99.5%;
+
     }
     .query-type-selector .query-type-option:nth-child(1){
         margin-bottom: 5px;

@@ -18,35 +18,39 @@
             <h2>Contact Us</h2>
             <div class="name-input">
                 <div class="">
-                    <label for="first-name">First Name *</label> <br>
+                    <label for="first-name">First Name </label> <br>
                     <input class="input-field" type="text" id="first-name" required autocomplete="on"> <br>
                     <span class="first-name-error-message" id="first-name-error-message"></span>
                 </div>
                 <div class="">
-                    <label for="last-name">Last Name *</label> <br>
+                    <label for="last-name">Last Name </label> <br>
                     <input class="input-field" type="text" id="last-name" required> <br>
+                    <span class="last-name-error-message" id="last-name-error-message"></span>
                 </div>
             </div>
-            <label for="email">Email Address *</label> <br>
+            <label for="email">Email Address </label> <br>
             <input class="email-input-field" type="email" id="email" required autocomplete="on"><br>
-            <span class="first-name-error-message" id="first-name-error-message"></span>
-            <label for="general-inquiry" id="query-type">Query Type *</label>
+            <span class="email-error-message" id="email-error-message"></span>
+            <label for="general-inquiry" id="query-type">Query Type </label>
             <div class="query-type-selector">
-                <div class="query-type-option">
+                <label for="general-inquiry" class="query-type-option">
                     <input type="radio" id="general-inquiry" name="query-type-option">
-                    <label for="general-inquiry">General Inquiry</label>
-                </div>
-                <div class="query-type-option">
+                    <span>General Inquiry</span>
+                </label>
+                <label for="support-request" class="query-type-option">
                     <input type="radio" id="support-request" name="query-type-option">
-                    <label for="support-request" id="query-label">Support Request</label>
-                </div>
+                    <span>Support Request</span>
+                </label>
             </div>
-            <label for="message">Message *</label> <br>
-            <textarea id="message" rows="4" cols="50" required></textarea> <br>
+            <span class="query-error-message" id="query-error-message"></span>
+            <label for="message">Message </label> <br>
+            <textarea id="message" rows="4" cols="50" required></textarea>
+            <span class="textarea-error-message" id="textarea-error-message"></span> <br>
             <span id="consent-span">
                 <input type="checkbox" name="check" id="check">
                 <p>i consent to being contacted by the team</p>
-            </span> <br>
+            </span>
+            <span class="consent-error-message" id="consent-error-message"></span> <br>
             <button id="submit-button">Submit</button>
 
         </div>
