@@ -145,11 +145,14 @@ textarea{
 }
 
 @media (max-width: 600px) {
+    .first-name-error-message{
+        margin-top: 3px;
+    }
     .email-error-message{
-        top: 49%
+        top: 48.3%
     }
     .query-error-message{
-        top: 71%
+        top: 70%
     }
     body{
         height: 124vh;
@@ -196,11 +199,13 @@ textarea{
 
 
 @media (min-width: 600px) and (max-width: 900px) {
-    .email-error-message{
-        top: 33.1%;
+    .first-name-error-message{
+        margin-top: 2px;
+    }.email-error-message{
+        top: 32.7%;
     }
     .query-error-message{
-        top: 46.5%;
+        top: 45.9%;
     }
     .contact-container{
         width: 70%;
