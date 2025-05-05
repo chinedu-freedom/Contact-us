@@ -6,19 +6,26 @@ let textareaInput = document.getElementById("message")
 let consentCheckbox = document.getElementById("general-inquiry")
 let secondConsentCheckbox = document.getElementById("support-request")
 let button = document.getElementById("submit-button")
+let email = document.querySelector(".email")
+let consent = document.querySelector(".consent")
+let message = document.querySelector(".message")
 let firsttNameErrorMesssge = document.getElementById("first-name-error-message")
 let lastNameErrorMesssge = document.getElementById("last-name-error-message")
 let emailErrorMesssge = document.getElementById("email-error-message")
 let queryErrorMesssge = document.getElementById("query-error-message")
 let textareaErrorMesssge = document.getElementById("textarea-error-message")
 let consentErrorMesssge = document.getElementById("consent-error-message")
+console.log(email);
 
 
 
-button.addEventListener("click",() => {
+
+button.addEventListener("click",(e) => {
+    e.preventDefault()
     if(firstNameInput.value.trim() === ""){
         firsttNameErrorMesssge.style.display = "block"
         firsttNameErrorMesssge.textContent = "This field is required"
+        firsttNameErrorMesssge.style.marginBottom = "-11px"
     }
     else{
         firsttNameErrorMesssge.style.display = "none"
@@ -31,8 +38,10 @@ button.addEventListener("click",() => {
         lastNameErrorMesssge.style.display = "none"
     }
     if(emailInput.value.trim() === ""){
-        emailErrorMesssge.style.display = "block"
-        emailErrorMesssge.textContent = "Please enter a valid email address"
+        emailErrorMesssge.style.display = "block";
+        emailErrorMesssge.textContent = "Please enter a valid email address";
+        email.style.marginTop = "0px";
+        email.style.marginBottom = "0px";
     }
     else if(emailInput.value.includes('@') && (emailInput.value.includes('.com'))){
         emailErrorMesssge.style.display = "none"
@@ -51,11 +60,14 @@ button.addEventListener("click",() => {
     if(textareaInput.value.trim() === ""){
         textareaErrorMesssge.style.display = "block"
         textareaErrorMesssge.textContent = "This field is required"
+        message.style.marginTop = "0"
     }
     else{
         textareaErrorMesssge.style.display = "none"
     }
     if(!consentCheckbox.checked){
+        consent.style.marginTop = "-20px"
+        consent.style.marginBottom = "-20px"
         consentErrorMesssge.style.display = "block"
         consentErrorMesssge.textContent = "To submit this form, please consent to being contacted"
     }

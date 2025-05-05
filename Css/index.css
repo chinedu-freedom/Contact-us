@@ -21,49 +21,38 @@ label{
     color: red;
     display: none;
     font-size: 12px;
-    position: absolute;
-    margin-left: 4px;
-    margin-top: 4px;
+    margin: 4px 0 0 4px;
 }
 .last-name-error-message{
     color: red;
-    margin-top: 4px;
     display: none;
     font-size: 12px;
-    position: absolute; 
-    margin-left: 4px;
+    margin: 4px 0 0 4px;
 }
 .email-error-message{
     color: red;
-    top: 40%;
-    margin-left: 4px;
     display: none;
     font-size: 12px;
-    position: absolute;
+    margin: 4px 0 0 4px;
 }
 .query-error-message{
     color: red;
     display: none;
     font-size: 12px;
-    position: absolute;    
     margin-left: 4px;
-    top: 53%;
 }
 .textarea-error-message{
     color: red;
     display: none;
     font-size: 12px;
     margin-left: 4px;
-    position: absolute;    
 }
 .consent-error-message{
     color: red;
     display: none;
     font-size: 12px;
-    position: absolute;   
     margin-left: 4px; 
 }
-
 .contact-container h2{
     margin-bottom: 15px;
     font-size: 28px;
@@ -71,7 +60,7 @@ label{
 .contact-container{
     background-color: hsl(0, 0%, 100%);
     width: 37%;
-    height: 90vh;
+    height: 84vh;
     margin: 3% 0 2% 32%;
     padding: 20px;
     border-radius: 6px;
@@ -80,21 +69,23 @@ label{
     height: 35px;
     border-radius: 5px;
     border: 1px solid gray;
-    width: 155%;
+    width: 144%;
     margin-top: 4px;
     text-indent: 14px;
 }
 .name-input{
     display:flex;
-    gap: 22%;  
-    margin-bottom: 18px;
+    gap: 16.6%;  
+}
+.email{
+    margin: 12px 0 10px 0;
 }
 .email-input-field{
-    margin: 5px 0 17px 0;
+    margin: 5px 0 0px 0;
     height: 35px;
     border-radius: 5px;
     border: 1px solid gray;
-    width: 99%;
+    width: 99.8%;
     text-indent: 14px;
 }
 .query-type-selector{
@@ -105,13 +96,13 @@ label{
     height: 36px;
     border-radius: 5px;
     border: 1px solid gray;
-    width: 105%;
+    width: 110%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin: 6px 0 18px 0;
+    margin: 6px 0 2px 0;
     cursor: pointer;
 }
 #general-inquiry, #support-request{
@@ -123,11 +114,14 @@ label{
     margin-top: 6px;
     border-radius: 5px;
 }
+.message{
+    margin-top: 8px;
+}
 textarea{
-        padding: 12px;
+    padding: 12px;
 }
 #consent-span{
-    margin-top: 20px;
+    margin-top: 5px;
     display: inline-flex;
     gap: 5px;
 }
@@ -145,32 +139,25 @@ textarea{
 }
 
 @media (max-width: 600px) {
-    .first-name-error-message{
-        margin-top: 1px;
-    }
-    .email-error-message{
-        top: 48.3%
-    }
-    .query-error-message{
-        top: 70%
-    }
     body{
         height: 124vh;
     }
     .contact-container{
         width: 80%;
-        margin: 30px 0 0 18.5px;
+        margin: 30px 0 0 19px;
         height: 115vh;
     }
     .name-input{
         flex-direction: column;
-        gap: 15px;
-        width: 64%;
+        width: 69.5%;
+    }
+    .last-name{
+        margin-top: 11px;
     }
     .query-type-selector{
         flex-direction: column;
         gap: 5px;
-        width: 95%;
+        width: 90.5%;
         margin-top: 8px;
     }
     .query-type-selector .query-type-option:nth-child(1){
@@ -181,7 +168,7 @@ textarea{
     }
     #message{
         width: 92%;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     textarea{
         width: -10px;
@@ -199,14 +186,6 @@ textarea{
 
 
 @media (min-width: 600px) and (max-width: 900px) {
-    .first-name-error-message{
-        margin-top: 2px;
-    }.email-error-message{
-        top: 37.9%;
-    }
-    .query-error-message{
-        top: 51%;
-    }
     .contact-container{
         width: 70%;
         margin: 15% 0 0 13%;
@@ -225,7 +204,6 @@ textarea{
     }
     .email-input-field{
         width: 99.5%;
-
     }
     .query-type-selector .query-type-option:nth-child(1){
         margin-bottom: 5px;
